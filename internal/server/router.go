@@ -1,4 +1,4 @@
-package main
+package server
 
 import (
 	"net/http"
@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func main() {
+func setRouter() *gin.Engine {
 	// create default gin router with Logger & Recovery middleware
 	router := gin.Default()
 
@@ -15,7 +15,7 @@ func main() {
 	{
 		// add /hello GET route to router & define route handler function
 		api.GET("/hello", func(ctx *gin.Context) {
-			ctx.JSON(200, gin.H{"msg": "world"})
+			ctx.JSON(200, gin.H{"status": "OK"})
 		})
 	}
 
@@ -25,4 +25,6 @@ func main() {
 
 	// start listening & serving requests
 	router.Run(":8080")
+
+	return router
 }
