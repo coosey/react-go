@@ -10,13 +10,14 @@ func setRouter() *gin.Engine {
 	// create default gin router with Logger & Recovery middleware
 	router := gin.Default()
 
+	// Enables auto redirect if current route not matched but handler w/ (w/o) trailing slash exists
+	router.RedirectTrailingSlash = true
+
 	// create API route group
 	api := router.Group("/api")
 	{
-		// add /hello GET route to router & define route handler function
-		api.GET("/hello", func(ctx *gin.Context) {
-			ctx.JSON(200, gin.H{"status": "OK"})
-		})
+		api.POST("/signup", signUp)
+		api.POST("/signin", signIn)
 	}
 
 	router.NoRoute(func(ctx *gin.Context) {
