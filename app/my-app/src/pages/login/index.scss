@@ -1,0 +1,49 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  
+  .left-panel {
+    background-color: aquamarine;
+    width: 55vw;
+    padding: 10px;
+  }
+
+  .img-container {
+    margin: 20px;
+    
+    .img-box {
+      padding: 10px;
+      height: 100vh;
+      border: 0.5px solid black;
+      border-radius: 25px;
+    }
+  }
+
+  .right-panel {
+    background-color: lightcyan;
+    width: 45vw;
+
+    .top-container {
+      margin: 20px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      &-logo {
+        gap: 20px;
+      }
+
+      &-signup {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: right;
+        gap: 10px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
