@@ -1,47 +1,78 @@
 .login-page {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   
   .left-panel {
-    background-color: aquamarine;
-    width: 55vw;
+    width: 55%;
     padding: 10px;
+    height: 100vh;
   }
 
   .img-container {
-    margin: 20px;
     
     .img-box {
+      height: 90vh;
+      margin: 20px;
       padding: 10px;
-      height: 100vh;
       border: 0.5px solid black;
       border-radius: 25px;
     }
   }
 
   .right-panel {
-    background-color: lightcyan;
-    width: 45vw;
-
+    width: 45%;
+    height: 100vh;
+    
     .top-container {
-      margin: 20px;
-      padding: 10px;
+      margin: 10px;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
+      flex-wrap: wrap;
 
       &-logo {
+        margin: 10px;
+        padding: 10px;
         gap: 20px;
       }
 
       &-signup {
+        padding: 10px;
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
         justify-content: right;
         gap: 10px;
 
         a {
           text-decoration: none;
+          color: black;
+        }
+      }
+    }
+
+    .form-container {
+      &-form {
+        margin: 10px;
+        border: 0.5px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  
+        h1 {
+          margin: 10px 0px 0px 0px;
+          padding-top: 10px;
+          font-size: 2em;
+          font-weight: 500;
+        }
+
+        p {
+          margin: 0px;
+          padding-bottom: 3em;
+        }
+        .inputField {
+          width: 80%;
         }
       }
     }

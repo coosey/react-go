@@ -1,6 +1,7 @@
 import { Logo } from 'components/logo';
 import './index.scss';
 import { FormButton } from 'components/form-components/formButton';
+import { FormInput } from 'components/form-components/formInput';
 
 export const LoginPage = () => {
   return (
@@ -14,12 +15,6 @@ export const LoginPage = () => {
       </section>
       {/* RIGHT PANEL */}
       <section className="right-panel">
-        {/*
-          Components in this panel:
-            1. logo
-            2. signup-btn
-            3. login-form
-        */}
         <div className="top-container">
           <div className="top-container-logo">
             <Logo alt="logo" src="https://cdn.dribbble.com/userupload/10056937/file/original-b185c3532b852114025434d4e2bd14dd.png?resize=752x" />
@@ -29,7 +24,16 @@ export const LoginPage = () => {
               <FormButton btnName="sign up" onBtnClick={() => console.log('SIGN UP BTN CLICKED')}/>
           </div>
         </div>
-        <div className="signup-container"></div>
+        <div className="form-container">
+          <form className="form-container-form">
+            <h1>Sign In</h1>
+            <p>Please enter your login details below</p>
+            <div className="inputField">
+              <FormInput type="email" name="email" value="" onChange={(e) => console.log(e)} />
+              <FormInput type="password" name="password" value="" onChange={(e) => console.log(e)} />
+            </div>
+          </form>
+        </div>
       </section>
     </div>
   )

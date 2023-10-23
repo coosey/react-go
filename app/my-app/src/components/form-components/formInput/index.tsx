@@ -1,4 +1,5 @@
 import { ChangeEvent } from "react";
+import './index.scss';
 
 export interface FormInputProps {
   type: 'text' | 'password' | 'email' | 'number';
@@ -8,6 +9,8 @@ export interface FormInputProps {
   placeholder?: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   disabled?: boolean;
+  customLabelStyle?: string;
+  customInputStyle?: string;
 }
 
 export const FormInput = (props: FormInputProps) => {
@@ -19,14 +22,17 @@ export const FormInput = (props: FormInputProps) => {
     placeholder,
     onChange,
     disabled,
+    customLabelStyle,
+    customInputStyle,
   } = props;
   
   return (
-    <div>
+    <div className="field-wrapper">
       {label && (
-        <label htmlFor={label}>{label}</label>
+        <label className={customLabelStyle ? customLabelStyle : "field-wrapper--label"} htmlFor={label}>{label}</label>
       )}
-      <input 
+      <input
+        className={customInputStyle ? customInputStyle : "field-wrapper--input"}
         name={name}
         value={value}
         onChange={onChange}

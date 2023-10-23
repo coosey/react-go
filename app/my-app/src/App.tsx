@@ -1,4 +1,4 @@
-import './assets/css/index.css';
+import './assets/css/styles.scss';
 import { LoginPage } from './pages/login/login.page';
 
 function App() {

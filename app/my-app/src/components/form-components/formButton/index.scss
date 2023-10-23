@@ -1,15 +1,17 @@
+@use '../../../assets/abstracts' as *;
+
 .btn-container {
   button {
     display: block;
     width: 100px;
     margin: 0 auto;
     margin-top: 20px;
-    border: 1px solid #25729a;
-    border-radius: 3px;
+    border: 0.5px solid black;
+    border-radius: 30px;
     text-align: center;
-    color: #ffffff;
-    background-color: #3093c7;
+    color: black;
     margin-bottom: 20px;
     padding: 7px 7px 7px 7px;
+    background-color: $btn-signup;
   }
 }
