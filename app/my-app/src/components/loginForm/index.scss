@@ -1,0 +1,26 @@
+.form-container {
+  margin: 10px;
+  border: 0.5px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    margin: 10px 0px 0px 0px;
+    padding-top: 10px;
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0px;
+    padding-bottom: 1em;
+
+  }
+
+  input {
+    border-radius: 30px;
+  }
+}

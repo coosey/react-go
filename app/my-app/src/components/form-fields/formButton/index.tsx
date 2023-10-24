@@ -5,7 +5,7 @@ export interface FormButtonProps {
   customBtnStyle?: string;
   btnName: string;
   btnDisabled?: boolean;
-  onBtnClick: () => void;
+  onBtnClick: (e?: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export const FormButton = (props: FormButtonProps) => {

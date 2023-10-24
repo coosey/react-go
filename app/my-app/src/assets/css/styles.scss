@@ -10,6 +10,7 @@
 
 html, body {
   padding: 0;
+  width: 100%;
   font-family: $text-primary;
 }
 
@@ -34,4 +35,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root {
   isolation: isolate;
+}
+
+.app {
+  width: 100%;
+  height: auto;
 }

@@ -1,5 +1,3 @@
-@use '../../../assets/abstracts' as *;
-
 .btn-container {
   button {
     display: block;
@@ -12,6 +10,5 @@
     color: black;
     margin-bottom: 20px;
     padding: 7px 7px 7px 7px;
-    background-color: $btn-signup;
   }
 }

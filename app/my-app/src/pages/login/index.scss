@@ -1,3 +1,5 @@
+@use '../../assets/abstracts' as *;
+
 .login-page {
   display: flex;
   flex-direction: row;
@@ -21,6 +23,7 @@
 
   .right-panel {
     width: 45%;
+    min-width: 0px;
     height: 100vh;
     
     .top-container {
@@ -47,32 +50,10 @@
           text-decoration: none;
           color: black;
         }
-      }
-    }
 
-    .form-container {
-      &-form {
-        margin: 10px;
-        border: 0.5px solid red;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-  
-        h1 {
-          margin: 10px 0px 0px 0px;
-          padding-top: 10px;
-          font-size: 2em;
-          font-weight: 500;
-        }
-
-        p {
-          margin: 0px;
-          padding-bottom: 3em;
-        }
-        .inputField {
-          width: 80%;
+        button {
+          background-color: $btn-signup;
+          color: white;
         }
       }
     }
