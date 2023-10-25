@@ -1,6 +1,6 @@
-import { FormButton, FormInput } from "components";
-import './index.scss';
 import { useState } from "react";
+import './index.scss';
+import { FormButton, FormInput } from "components";
 
 export const LoginForm = () => {
   const [email, setEmail] = useState<string>('');
