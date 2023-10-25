@@ -21,7 +21,10 @@ export const FormButton = (props: FormButtonProps) => {
     <div className={customDivStyle ? customDivStyle : "btn-container"}>
       <button 
         className={customBtnStyle ? customBtnStyle : "btn-container-button"} 
-        onClick={onBtnClick} 
+        onClick={(e) => {
+          e?.preventDefault();
+          onBtnClick();
+        }} 
         disabled={btnDisabled}
       >
         {btnName}

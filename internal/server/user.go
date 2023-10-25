@@ -12,7 +12,7 @@ func signUp(ctx *gin.Context) {
 	// create new var type User
 	user := new(store.User)
 	// call Bind() to bind form data with User type
-	// if binding fails, set error code & message, then return from function
+	// if binding fails, set error code & message, and return from function
 	if err := ctx.Bind(user); err != nil {
 		ctx.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"err": err.Error()})
 		return
