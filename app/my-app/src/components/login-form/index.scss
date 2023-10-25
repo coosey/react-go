@@ -12,6 +12,7 @@
 
   :nth-child(2) {
     padding-bottom: 2em;
+    color: $text-signup;
   }
 
   h1 {
@@ -42,6 +43,7 @@
 
   .or {
     padding: 1em;
+    color: $text-signup;
   }
 
   .login-btn, .login-btn-google {

@@ -48,7 +48,13 @@
 
         a {
           text-decoration: none;
-          color: black;
+          color: $text-signup;
+        }
+        
+        a:hover {
+          opacity: 1;
+          color: $text-signup-hover;
+          transition: opacity 0ms ease 0s;
         }
 
         button {
