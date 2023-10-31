@@ -7,8 +7,8 @@ import (
 func NewDBOptions() *pg.Options {
 	return &pg.Options{
 		Addr:     "localhost:5432",
-		Database: "react-go",
-		User:     "postgres",
-		Password: "postgres",
+		Database: "reactgo",
+		User:     "coose",
+		Password: "password",
 	}
 }

@@ -3,38 +3,40 @@
 .login-page {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
   
   .left-panel {
-    width: 55%;
     padding: 10px;
-    height: 100vh;
   }
-
+  
   .img-container {
+    padding: 10px;
     
     .img-box {
       height: 90vh;
-      margin: 20px;
-      padding: 10px;
+      width: 50vw;
       border: 0.5px solid black;
       border-radius: 25px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 
   .right-panel {
-    width: 45%;
-    min-width: 0px;
-    height: 100vh;
+    padding: 10px;
     
     .top-container {
-      margin: 10px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
 
       &-logo {
-        margin: 10px;
         padding: 10px;
         gap: 20px;
       }
