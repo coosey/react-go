@@ -5,9 +5,7 @@
   padding-top: 3em;
   border: 0.5px solid red;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   text-align: center;
 
   :nth-child(2) {
@@ -28,10 +26,10 @@
   }
 
   input {
-    width: 30vw;
-    margin-left: 1em;
-    margin-right: 1em;
-    border-radius: 30px;
+    max-width: 80%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
   }
 
   .forgot-password {
@@ -48,7 +46,7 @@
 
   .login-btn, .login-btn-google {
     button {
-      width: 30vw;
+      width: 60%;
       font-weight: 600;
       padding: 10px;
     }

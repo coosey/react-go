@@ -3,38 +3,57 @@
 .login-page {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   margin: 10px;
-  
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left-panel {
     padding: 10px;
   }
-  
+
   .img-container {
     padding: 10px;
-    
+
     .img-box {
-      height: 90vh;
-      width: 50vw;
       border: 0.5px solid black;
       border-radius: 25px;
+      width: 50vw;
 
       img {
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        max-width: 100%;
+      }
+
+      @media screen and (max-width: 1200px) {
+        img {
+          height: auto;
+          max-width: 100%;
+        }
       }
     }
+
   }
 
   .right-panel {
+    width: 100%;
     padding: 10px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+
     .top-container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      flex-wrap: wrap;
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
 
       &-logo {
         padding: 10px;
@@ -44,15 +63,14 @@
       &-signup {
         padding: 10px;
         display: flex;
-        align-items: center;
-        justify-content: right;
+        align-items: start;
         gap: 10px;
 
         a {
           text-decoration: none;
           color: $text-signup;
         }
-        
+
         a:hover {
           opacity: 1;
           color: $text-signup-hover;
@@ -62,6 +80,20 @@
         button {
           background-color: $btn-signup;
           color: white;
+        }
+      }
+    }
+
+    .form-wrapper {
+      margin-bottom: 10em;
+
+      @media screen and (min-width: 1201px) {
+        margin-bottom: 15em;
+      }
+
+      input, button {
+        @media screen and (max-width: 561px) {
+          max-width: 100%;
         }
       }
     }
