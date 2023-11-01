@@ -19,11 +19,11 @@
     padding: 10px;
 
     .img-box {
-      border: 0.5px solid black;
-      border-radius: 25px;
       width: 50vw;
 
       img {
+        border-radius: 25px;
+        border: 0.5px solid grey;
         height: 100vh;
         max-width: 100%;
       }

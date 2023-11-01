@@ -1,5 +1,5 @@
 
-import { Logo, FormButton, LoginForm } from 'components';
+import { Logo, LoginForm } from 'components';
 import './index.scss';
 
 export const LoginPage = () => {
@@ -21,7 +21,6 @@ export const LoginPage = () => {
           </div>
           <div className="top-container-signup">
             <a href=".">Don't have an account?</a>
-            {/* <FormButton btnName="sign up" onBtnClick={() => console.log('SIGN UP BTN CLICKED')} /> */}
           </div>
         </div>
         <div className="form-wrapper">
