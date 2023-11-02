@@ -1,14 +1,42 @@
+@use '../../../assets/abstracts' as *;
+
 .field-wrapper {
   margin: 10px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
-  label, input {
+  label,
+  input {
     flex-grow: 1;
   }
-  
+
+  input:focus-visible {
+    outline: none !important;
+    border: 2px solid #3fa4fc;
+  }
+
+  input {
+    font-size: 20px;
+    width: 100%;
+    transition: border-color 250ms;
+    background-color: transparent;
+  }
+
+  label {
+    color: #999;
+    font-size: 0.75em;
+    font-weight: normal;
+    padding-left: 0.80rem;
+    pointer-events: none;
+  }
+
+  &--label {
+    text-align: left;
+  }
+
   &--input {
     padding: 5px;
     padding-left: 1em;

@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-content: center;
   margin: 10px;
+  padding-top: 2rem;
 
   @media screen and (max-width: 1200px) {
     flex-direction: column;
@@ -89,12 +90,6 @@
 
       @media screen and (min-width: 1201px) {
         margin-bottom: 15em;
-      }
-
-      input, button {
-        @media screen and (max-width: 561px) {
-          max-width: 100%;
-        }
       }
     }
   }

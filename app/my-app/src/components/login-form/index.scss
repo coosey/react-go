@@ -7,11 +7,6 @@
   flex-direction: column;
   text-align: center;
 
-  :nth-child(2) {
-    padding-bottom: 2em;
-    color: $text-signup;
-  }
-
   h1 {
     margin: 10px 0px 0px 0px;
     padding-top: 10px;
@@ -25,9 +20,6 @@
   }
 
   input {
-    max-width: calc(60% + 3rem);
-    margin-left: 1rem;
-    margin-right: 1rem;
     border-radius: 10px;
   }
 
