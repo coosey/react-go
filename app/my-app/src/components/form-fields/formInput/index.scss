@@ -8,29 +8,22 @@
   flex-direction: column;
   justify-content: center;
 
-  label,
-  input {
-    flex-grow: 1;
-  }
-
   input:focus-visible {
     outline: none !important;
     border: 2px solid #3fa4fc;
   }
 
-  input {
-    font-size: 20px;
-    width: 100%;
-    transition: border-color 250ms;
-    background-color: transparent;
-  }
-
   label {
-    color: #999;
-    font-size: 0.75em;
-    font-weight: normal;
+    color: black;
+    font-size: 0.90em;
+    font-weight: bold;
     padding-left: 0.80rem;
     pointer-events: none;
+  }
+
+  input {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   &--label {
@@ -42,4 +35,25 @@
     padding-left: 1em;
     border: .5px solid;
   }
+
+  .show-password {
+    display: inline-flex;
+    padding: 10px;
+    gap: 5px;
+    align-items: center;
+    font-size: 0.9em;
+
+    input {
+      height: 1em;
+      width: 1em;
+    }
+
+    button#toggle-password {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: 300;
+    }
+  }
+
 }

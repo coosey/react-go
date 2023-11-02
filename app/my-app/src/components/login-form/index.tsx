@@ -16,17 +16,23 @@ export const LoginForm = () => {
         name="email"
         value={email}
         placeholder="Email Address"
+        required
         onChange={(e) => setEmail(e?.target?.value)} 
       />
       <FormInput
+        id="current-password"
+        autoComplete="current-password"
         label="Password"
         type="password"
         name="password"
         value={password}
         placeholder="Password"
+        showPassword
+        required
         onChange={(e) => setPassword(e?.target?.value)} 
       />
       <div className="forgot-password">
+        {/* TODO: add href */}
         <a>Forgot Password?</a>
       </div>
       <div className="login-btn">
